@@ -21,7 +21,21 @@ public class Task09 {
     }
 
     public static void displayClosestToTen(int a, int b) {
-        // напишите тут ваш код
+        int s,k,delta_a, delta_b;
+        delta_a=10-a;
+        delta_b=10-b;
+        s=abs(delta_a);
+        k=abs(delta_b);
+        if(s>k){
+            System.out.println(b);
+        }
+        else{
+            if(s<k){
+                System.out.println(a);
+            }
+            else
+                System.out.println(a);
+        }
 
     }
 

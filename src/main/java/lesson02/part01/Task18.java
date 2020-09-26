@@ -20,7 +20,12 @@ import java.util.*;
 
 public class Task18 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        BufferedReader reader = new BufferedReader(new InputStreamReader (System.in));
+        String n1= reader.readLine();
+        String n2 = reader.readLine();
+        String n3 = reader.readLine();
+        System.out.println(n1+" получает "+n2+" через "+n3+" лет.");
+
 
     }
 }

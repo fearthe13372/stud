@@ -23,7 +23,20 @@ package lesson02.part02;
 
 public class Task14 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        ????????????????7
+        BufferedReader reader= new BufferedReader(new InputStreamReader(System.in));
+        String s = reader.readLine();
+        int date= Integer.parseInt(s);
+        int x1=365,x2=366;
+        if ((date%400)== 0 &&(date/400)%100 == 0){
+            System.out.println("количество дней в году: "+x1);
+        }
+        if((date/400)%4 == 0){
+            System.out.println("количество дней в году: "+x2);
+        }
+        else
+            System.out.println("количество дней в году: "+x1);
+
 
     }
 }

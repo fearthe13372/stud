@@ -16,10 +16,39 @@ package lesson02.part02;
  * 3.	Если введено число от 1 до 7, необходимо вывести день недели.
  * 4.	Если введено число не входящее в интервал от 1 до 7, то вывести уведомление что такого дня недели не существует.
  */
-
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 public class Task13 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String s = reader.readLine();
+        int d=Integer.parseInt(s);
+        switch(d) {
+            case 1:
+                System.out.println("понедельник");;
+                break;
+            case 2:
+                System.out.println("вторник");;
+                break;
+            case 3:
+                System.out.println("среда");;
+                break;
+            case 4:
+                System.out.println("четверг");;
+                break;
+            case 5:
+                System.out.println("пятница");;
+                break;
+            case 6:
+                System.out.println("суббота");;
+                break;
+            case 7:
+                System.out.println("воскресенье");;
+                break;
+            default:
+                System.out.println("такого дня недели не существует");;
+                break;
+        }
 
     }
 }

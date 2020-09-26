@@ -14,10 +14,15 @@ package lesson02.part01;
  * 5.	Выведенный текст должен содержать введенное имя name3.
  * 6.	Выведенный тест должен полностью соответствовать заданию.
  */
-
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 public class Task20 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String name1 = reader.readLine();
+        String name2 = reader.readLine();
+        String name3 = reader.readLine();
+        System.out.println(name1+" + "+ name2+ " + "+ name3+" = Чистая любовь, да-да!");
 
     }
 }

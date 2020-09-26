@@ -18,8 +18,11 @@ public class Task10 {
      */
 
     public static int min(int a, int b) {
+        if(a<b){
+            System.out.println(a);}
+        else
+            System.out.println(b);
         return 0;
-        //напишите тут ваш код
     }
 
     public static void main(String[] args) {
